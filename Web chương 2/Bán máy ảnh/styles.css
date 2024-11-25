@@ -1,0 +1,83 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+}
+
+.product-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.hh-box {
+	background-color: #fff;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: 30%;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.hh-box-image img {
+	width: 100%;
+	height: auto;
+	max-width: 250px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ddd;
+}
+
+.hh-box-name {
+	padding: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.hh-box-price {
+	font-size: 16px;
+	color: #e74c3c;
+	margin: 10px 0;
+}
+
+.hh-box-actions {
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hh-box-actions button {
+	background-color: #3498db;
+	color: #fff;
+	border: none;
+	padding: 10px 15px;
+	font-size: 14px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.hh-box-actions button:hover {
+	background-color: #2980b9;
+}
+
+.hh-box-icon img {
+	width: 30px;
+	height: 30px;
+	margin: 10px 0;
+}
+
+@media (max-width: 1200px) {
+	.hh-box {
+		width: 48%;
+	}
+}
+
+@media (max-width: 768px) {
+	.hh-box {
+		width: 100%;
+	}
+}
